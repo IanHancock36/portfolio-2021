@@ -1,3 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&display=swap');
+
+
+.header{
+  
+  min-height: 50vh;
+  background-size: cover;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  color: #fff
+}
+.video{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  /* left:50%;
+  right:50%; */
+  height:100%;
+  object-fit: cover;
+  transform: translate(-50,50%)
+}
+.header__intro{
+color: #fff;
+padding:  1rem 2rem;
+border-radius: 5px;
+}
+
+.header__intro h1{
+  text-align: center;
+
+
+}
+.about_me{
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_me h2{
+  text-align: center;
+}
+.projects{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 1rem;
+  background:#181818 ;
+  
+}
+.projects__card{
+  width: 33.3%;
+ background: #f7f7f7;
+ margin: 0 1rem;
+ padding:2rem;
+ border-radius: 7px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ 
+}
+/* .projects__card__description h2{
+text-align: center;
+} */
+.projects__card__links{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projects__card__links a{
+  text-decoration: none;
+  color: #181818;
+  transition: 0.3s;
+  background-size: 100% 200%;
+  background-position: 0px 0px;
+}
+
+.projects__card__links a:hover{
+  background-color: aqua;
+
+ }
+
+ .footer{
+   background-color: gray;
+   color: #f7f7f7;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2rem 1rem;
+ }
+ .footer a{
+   text-decoration: none;
+   color: #f7f7f7;
+ }
+ .footer__socials{
+   display: flex;
+   justify-content: space-between;
+   width: 15%
+
+ }
+ .footer__attributions{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+@media screen and (max-width: 768px){
+  .projects{
+    flex-direction: column;
+  }
+  
+  .projects__card{
+    width: 100%;
+    margin: 1rem 0;
+  }
+  /* .about_me{
+    width: 100%;
+    margin: 1rem 0;
+  } */
+  .video{
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+}
+
+/*  put a hover effect later */
+/* Default styling below */
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -10,7 +139,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  background-color: gray;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -81,8 +210,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -260,8 +388,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -277,8 +404,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -294,8 +420,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -311,8 +436,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -328,8 +452,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
